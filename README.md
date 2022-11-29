@@ -1,6 +1,6 @@
 ![TH-Servers](images/logo.svg)
 
-# TH Servers
+# TH Servers - IoT Application
 
 #### About the application
 
