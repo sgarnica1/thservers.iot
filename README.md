@@ -14,7 +14,6 @@ To install this project, first clone the repository
 ``` bash
 git clone https://github.com/sgarnica1/thservers.iot.git
 ```
-or
 ##### SSH
 ``` bash
 git clone git@github.com:sgarnica1/thservers.iot.git
