@@ -4,6 +4,9 @@ IoT (Internet of Things) Application for tracing, reading and alerting temperatu
 
 This application is split into two main projects, a fullstack web application and a hardware prototype.  
 
+#### Disclaimer
+This project is part of the final mockup project of the college course `Internet or Things` from Tecnológico de Monterrey, therefore, #### it is not finished. 
+
 ## Installation
 
 To install this project, first clone the repository
