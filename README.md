@@ -149,6 +149,10 @@ And open [http://localhost:4000](http://localhost:4000) to view it in your brows
 
 To view the project best, open it with an API platform application.
 
+### Flow chart
+
+![TH-Servers](images/software.jpg)
+
 ## Hardware
 
 Move to the `hardware` directory
@@ -158,6 +162,8 @@ cd ./hardware
 ```
 
 To install and set your the hardware code, follow the instructions from the NodeMCU user manual that comes with the [kit](https://www.amazon.com.mx/Robotistan-Nodemcu-ESP8266-inicio-automatizados/dp/B09CTQHK4V/ref=sr_1_5?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=N540VGYK604E&keywords=nodemcu&qid=1669749873&qu=eyJxc2MiOiIzLjY2IiwicXNhIjoiMy41OSIsInFzcCI6IjIuNTIifQ%3D%3D&sprefix=nodemcu%2Caps%2C547&sr=8-5).
+
+![TH-Servers](images/hardware.jpg)
 
 ## About
 
