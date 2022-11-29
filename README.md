@@ -117,7 +117,7 @@ cd ./hardware
 - Deployed under the `/api` endpoint in 
 
 #### Routes available
-### `/api/data/get`
+#### `/api/data/get`
 - Method: `GET` 
 - Brief: Gets all data from database (temperature and humidity)
 
