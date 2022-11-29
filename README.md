@@ -10,14 +10,13 @@ This project is part of the final mockup project of the college course `Internet
 ## Installation
 
 To install this project, first clone the repository
-
+#### HTTP
 ``` bash
-# HTTP
 git clone https://github.com/sgarnica1/thservers.iot.git
 ```
 or
+##### SSH
 ``` bash
-# SSH
 git clone git@github.com:sgarnica1/thservers.iot.git
 
 ```
