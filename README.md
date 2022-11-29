@@ -1,59 +1,80 @@
+![TH-Servers](images/logo.svg)
+
 # TH Servers
+
 #### About the application
+
 IoT (Internet of Things) Application for tracing, reading and alerting temperatures and humidities in any data center.
 
-This application is split into two main projects, a fullstack web application and a hardware prototype.  
+This application is split into two main projects, a fullstack web application and a hardware prototype.
 
 #### Disclaimer
-This project is part of the final mockup project of the college course `Internet or Things` from Tecnológico de Monterrey, therefore, it is not finished. 
+
+This project is part of the final mockup project of the college course `Internet or Things` from Tecnológico de Monterrey, therefore, it is not finished.
 
 ## Installation
 
 To install this project, first clone the repository
+
 #### HTTP
-``` bash
+
+```bash
 git clone https://github.com/sgarnica1/thservers.iot.git
 ```
-##### SSH
-``` bash
+
+#### SSH
+
+```bash
 git clone git@github.com:sgarnica1/thservers.iot.git
 
 ```
+
 Now, move to the base directory
-``` bash
+
+```bash
 cd thservers.iot
 ```
+
 Inside you will find two base directories where you will find the hardware and software code
-``` bash
-./
+
+```bash
+.
+├── images
 ├── hardware
 └── software
     ├── backend
     └── frontend
 ```
+
 Inside the `./software` directory you will find two more directories with the `backend` and `frontend` code.
 
 To run the project locally, go through the following steps:
 
-### Frontend
+#### Note: To install all software code, you must install [`Node.js`](https://nodejs.org/en/) and `npm`.
+
+## Frontend
 
 Move to the `frontend` directory
-``` bash
+
+```bash
 cd ./software/frontend
 ```
+
 and run the following command
-``` bash
+
+```bash
 npm install
 ```
 
 After installing, now run the app in the development mode
-``` bash
+
+```bash
 npm start
 ```
+
 And open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes. You may also see any lint errors in the console.
-
 
 #### More Commands
 
@@ -82,63 +103,100 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Backend
 
-
-### Backend
 Move to the `backend` directory
-``` bash
+
+```bash
 cd ./software/backend
 ```
+
 and run the following command
-``` bash
+
+```bash
 npm install
 ```
 
-After installing, now run the app in the development mode
-``` bash
+#### Data Base
+
+Before running the server, install `MongoDB` locally and create a Data Base to store your data.
+
+```bash
+use <db_name>
+```
+
+#### Environmental variables
+
+To properly run the backend server, create a `.env` file and add the next environmental variables
+
+```bash
+PORT=4000
+CLIENT_URL=http://localhost:3000
+DATABASE_URL=mongodb://localhost/<db_name>
+```
+
+And replace `<db_name>` for your database name.
+
+Now run the app in the development mode
+
+```bash
 npm run dev
 ```
+
 And open [http://localhost:4000](http://localhost:4000) to view it in your browser.
 
 #### Notes
+
 To view the project best, open it with an API platform application.
 
-### Hardware
+## Hardware
+
 Move to the `hardware` directory
-``` bash
+
+```bash
 cd ./hardware
 ```
 
+To install and set your the hardware code, follow the instructions from the NodeMCU user manual that comes with the [kit](https://www.amazon.com.mx/Robotistan-Nodemcu-ESP8266-inicio-automatizados/dp/B09CTQHK4V/ref=sr_1_5?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=N540VGYK604E&keywords=nodemcu&qid=1669749873&qu=eyJxc2MiOiIzLjY2IiwicXNhIjoiMy41OSIsInFzcCI6IjIuNTIifQ%3D%3D&sprefix=nodemcu%2Caps%2C547&sr=8-5).
+
 ## About
+
 ### Frontend
+
 - This app was created with Create React App [(documentation)](https://facebook.github.io/create-react-app/docs/getting-started). To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Backend
+
 - Built with Node.js, Express.js and MongoDb Atlas
-- Deployed under the `/api` endpoint in 
+- Deployed under the `/api` endpoint in
 
 #### Routes available
+
 #### `/api/data/get`
-- Method: `GET` 
+
+- Method: `GET`
 - Brief: Gets all data from database (temperature and humidity)
 
 #### `/api/data/post?temperature=temp&humidity=hum&alarm=alarm`
-- Method: `GET` 
+
+- Method: `GET`
 - Brief: Posts data to database. Send information through query params via URL
 - `temp`: Float value for temperature
 - `hum` : Float value for humidity
 - `alarm`: Boolean value for activating/deactivating alarm
 
-
 #### `/api/data/params`
-- Method: `GET` 
+
+- Method: `GET`
 - Brief: Gets all params defined by user (Max and Min temperature and humidity)
 
 #### `/api/data/params`
-- Method: `POST` 
-- Brief: Post new values for Max-Min temperatures and humidities. 
+
+- Method: `POST`
+- Brief: Post new values for Max-Min temperatures and humidities.
 - Body: JSON
-``` bash
+
+```bash
 {
   "maxTemp": integer,
   "minTemp": integer,
@@ -147,27 +205,31 @@ cd ./hardware
 }
 ```
 
-
 ### Hardware
+
 #### General settings:
+
 - NodeMCU Version: `Robotistan, NodeMCU 1.0 V2, ESP8266MOD`
 - Arduino Version: `1.8.19`
 - NodeMCU Driver: `1.0`
 - ESP32 Driver: `ESP8266 2.7.4 `
 
 #### Components
+
 - Buzzer
-- DHT22 Module Sensor 
+- DHT22 Module Sensor
 - NodeMCU Robotistan, NodeMCU 1.0 V2, ESP8266MOD
 - LCD 16x2 I2C
 
 ## Deployment
+
 #### Frontend
+
 - Deployed in Netlify
 - You can view the frontend application on [https://thservers.netlify.app/](https://thservers.netlify.app)
 
 #### Backend
+
 - Deployed in Heroku
 - You can view the API on [https://thservers.herokuapp.com](https://thservers.herokuapp.com/)
 - Alternative URL [https://thservers.onrender.com/](https://thservers.onrender.com/)
-
