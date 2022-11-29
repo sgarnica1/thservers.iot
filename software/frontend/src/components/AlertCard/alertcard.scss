@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+
+.AlertCard {
+  .Card__title, .Card__value {
+    color: $color-danger;
+    font-weight: 700;
+  }
+
+  &__maxmin-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+
+  &__maxmin-title {
+    font-size: 14px;
+    color: $color-primary;
+  }
+
+  &__maxmin-value {
+    font-size: 14px;
+    color: $color-danger;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../scss/variables";
+
+.CardLoadingSkeleton {
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 20px;
+  border-radius: 6px;
+  box-shadow: $box-shadow;
+
+  background: linear-gradient(0.25turn, transparent, $color-light, transparent),
+    linear-gradient(#eee, #eee),
+    radial-gradient(38px circle at 19px 19px, #eee 50%, transparent 51%),
+    linear-gradient(#eee, #eee);
+  background-repeat: no-repeat;
+  animation: loading 1.5s infinite;
+
+  @keyframes loading {
+    to {
+      background-position: 315px 0, 0 0, 0 190px, 50px 195px;
+    }
+  }
+
+  &__title {
+    width: 50%;
+    height: 20px;
+    background-color: #dddddd;
+  }
+
+  &__value {
+    width: 20%;
+    height: 40px;
+    background-color: #dddddd;
+  }
+
+  &__progress {
+    margin-top: 30px;
+    width: 100%;
+    height: 10px;
+    background-color: #dddddd;
+  }
+
+  @media screen and (max-width: 821px) {
+    max-width: 100%;
+  }
+}

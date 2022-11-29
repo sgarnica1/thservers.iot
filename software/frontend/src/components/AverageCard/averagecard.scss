@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+
+.AverageCard {
+  &__maxmin {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__maxminvalue {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    color: $color-primary;
+
+    & .min {
+      color: $color-success;
+      font-weight: 600;
+    }
+
+    & .max {
+      color: $color-danger;
+      font-weight: 600;
+    }
+  }
+}

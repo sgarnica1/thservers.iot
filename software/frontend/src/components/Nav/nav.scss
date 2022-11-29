@@ -1,0 +1,12 @@
+@import "../../scss/variables";
+
+.Nav {
+  background-color: $color-background-dark;
+
+  @media screen and (max-width: 768px) {
+    & {
+      display: none;
+    }
+  }
+    
+}

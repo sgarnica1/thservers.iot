@@ -1,0 +1,19 @@
+@import "./scss/variables";
+
+.App {
+  display: grid;
+  grid-template-columns: 5% 95%;
+  position: relative;
+}
+
+.CurrentDate {
+  font-weight: 600;
+  font-size: 22px;
+  color: $color-primary;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    grid-template-columns: 100%;
+  }
+}

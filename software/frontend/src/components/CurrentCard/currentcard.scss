@@ -1,0 +1,66 @@
+@import "../../scss/variables";
+
+.CurrentCard {
+  &__maxlimit-description {
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-secondary;
+  }
+
+  &__maxlimit-form {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+
+    .input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      text-align: center;
+      border: none;
+      width: 60%;
+      height: 100%;
+      max-width: 60%;
+      border: 1px solid $color-background-light;
+      border-radius: 10px;
+      color: $color-primary;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    button {
+      margin: 0 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      font-weight: 600;
+      font-size: 30px;
+      cursor: pointer;
+      transition: ease 0.3s;
+
+      height: 40px;
+      width: 40px;
+      margin: auto;
+      border-radius: 50%;
+    }
+
+    button:hover {
+      transition: ease 0.3s;
+    }
+
+    .plus-button {
+      background: $color-background-light;
+        color: $color-background-dark;
+    }
+
+    .minus-button {
+      background: $color-background-light;
+      color: $color-background-dark;
+    }
+  }
+}

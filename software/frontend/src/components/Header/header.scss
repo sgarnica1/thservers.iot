@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+
+.Header {
+  height: 50px;
+  background: $color-light;
+  position: sticky;
+  top: 0;
+  box-shadow: $box-shadow;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 80px;
+  z-index: 999;
+
+  img {
+    height: 80%;
+  }
+  h1 {
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding:  0px 20px;
+  }
+}

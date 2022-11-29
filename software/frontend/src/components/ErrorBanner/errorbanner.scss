@@ -1,0 +1,46 @@
+@import "../../scss/variables";
+
+.ErrorBanner {
+  background: $color-danger;
+  color: $color-light;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  box-shadow: $box-shadow;
+
+  &__description {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  &__data > p {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 868px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    &__data {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &__description {
+      margin-bottom: 0px;
+    }
+
+    &__data > p {
+      margin-bottom: 0px;
+    }
+  }
+}

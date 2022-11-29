@@ -1,0 +1,40 @@
+@import "../../scss/variables";
+
+.Dashboard {
+  min-height: 100vh;
+  background-color: $color-background;
+
+  &__container {
+    padding: 30px 80px;
+  }
+
+  &__welcome {
+    color: $color-primary;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &__date {
+    color: $color-secondary;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    color: $color-background-dark;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__container {
+      padding: 30px 20px;
+    }
+
+        &__description {
+      font-size: 18px;
+        }
+  }
+}
