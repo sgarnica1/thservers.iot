@@ -121,7 +121,7 @@ cd ./hardware
 - Method: `GET` 
 - Brief: Gets all data from database (temperature and humidity)
 
-#### `/api/data/post?temperature=temp&humidity=hum?alarm=alarm`
+#### `/api/data/post?temperature=temp&humidity=hum&alarm=alarm`
 - Method: `GET` 
 - Brief: Posts data to database. Send information through query params via URL
 - `temp`: Float value for temperature
