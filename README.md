@@ -160,6 +160,16 @@ Move to the `hardware` directory
 ```bash
 cd ./hardware
 ```
+Inside you will find a file called `thservers.ino`, which is all the code you'll need to install in the NodeMCU. 
+#### The following libraries are needed to be installed:
+Libraries for screen connection LCD 16x2 with I2C
+- `Wire.h` 
+- `LiquidCrystal_I2C.h`
+Libraries for connecting NodeMCU to a data receiver link
+- `WiFiClient.h` 
+- `ESP8266HTTPClient.h`
+Library for the connection of the Temp/Hum sensor
+- `DHT.h` 
 
 To install and set your the hardware code, follow the instructions from the NodeMCU user manual that comes with the [kit](https://www.amazon.com.mx/Robotistan-Nodemcu-ESP8266-inicio-automatizados/dp/B09CTQHK4V/ref=sr_1_5?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=N540VGYK604E&keywords=nodemcu&qid=1669749873&qu=eyJxc2MiOiIzLjY2IiwicXNhIjoiMy41OSIsInFzcCI6IjIuNTIifQ%3D%3D&sprefix=nodemcu%2Caps%2C547&sr=8-5).
 
@@ -174,7 +184,7 @@ To install and set your the hardware code, follow the instructions from the Node
 ### Backend
 
 - Built with Node.js, Express.js and MongoDb Atlas
-- Deployed under the `/api` endpoint in
+- Deployed under the `/api` endpoint
 
 #### Routes available
 
