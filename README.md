@@ -165,9 +165,12 @@ Inside you will find a file called `thservers.ino`, which is all the code you'll
 Libraries for screen connection LCD 16x2 with I2C
 - `Wire.h` 
 - `LiquidCrystal_I2C.h`
+
 Libraries for connecting NodeMCU to a data receiver link
 - `WiFiClient.h` 
 - `ESP8266HTTPClient.h`
+
+
 Library for the connection of the Temp/Hum sensor
 - `DHT.h` 
 
